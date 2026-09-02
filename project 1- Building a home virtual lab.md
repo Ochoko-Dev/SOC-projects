@@ -3,18 +3,18 @@ Built a 3-VM home lab in Oracle VirtualBox to practice SOC analyst skills safely
 ## Setup
 ### 1. Installed Ubuntu Server as a guest VM
 Set up Ubuntu Server 26.04.1 LTS as the third VM alongside my existing Kali Linux install, to act as the target/practice server in the lab.
-![[Screenshot from 2026-09-02 22-33-37.png]]
+![Ubuntu Server install](Screenshot from 2026-09-02 22-33-37.png)
 ### 2. Installed Windows 10 (Enterprise Evaluation)
 Added a Windows 10 VM to the lab — most companies run Windows endpoints, so practicing detection/monitoring on Windows is essential for SOC work.
-![[Screenshot from 2026-09-02 22-59-32.png]]
+![Windows 10 install](Screenshot from 2026-09-02 22-59-32.png)
 ### 3. Configured internal networking 
 Switched all three VMs' network adapters from NAT to **Internal Network** (named `soclab`), which lets the VMs talk to each other while keeping them fully isolated from the internet and my host machine's real network — a safer setup for hands-on practice.
 
-![[Pasted image 20260902235331.png]]
+![Internal network config 1](Pasted image 20260902235331.png)
 
-![[Pasted image 20260902235503.png]]
+![Internal network config 2](Pasted image 20260902235503.png)
 
-![[Pasted image 20260902235527.png]]
+![Internal network config 3](Pasted image 20260902235527.png)
 
  ### 4. Assigned static IPs and verified connectivity
 Internal Network has no DHCP, so IPs had to be assigned manually on each machine:
