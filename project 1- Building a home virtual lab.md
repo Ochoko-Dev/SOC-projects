@@ -10,11 +10,11 @@ Added a Windows 10 VM to the lab — most companies run Windows endpoints, so pr
 ### 3. Configured internal networking 
 Switched all three VMs' network adapters from NAT to **Internal Network** (named `soclab`), which lets the VMs talk to each other while keeping them fully isolated from the internet and my host machine's real network — a safer setup for hands-on practice.
 
-![Internal network config 1](Pasted image 20260902235331.png)
+![Internal network config 1](Pasted%20image%2020260902235331.png)
 
-![Internal network config 2](Pasted image 20260902235503.png)
+![Internal network config 2](Pasted%20image%2020260902235503.png)
 
-![Internal network config 3](Pasted image 20260902235527.png)
+![Internal network config 3](Pasted%20image%2020260902235527.png)
 
  ### 4. Assigned static IPs and verified connectivity
 Internal Network has no DHCP, so IPs had to be assigned manually on each machine:
